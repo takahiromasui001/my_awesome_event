@@ -11,7 +11,11 @@
   %body
     %header.navbar.navbarexpandsm.navbarlight.bglight
       .container
-        =link_to"AwesomeEvents", root_path, class:"navbarbrand"
+        =link_to"AwesomeEvents", root_path, class:"navbarbrandmrauto"
+        %ul.navbarnav
+          %li.navitem
+            =link_to "GitHubでログイン", "/auth/github", class:"navlink", method: :post
+
     .container
       =yield
 
