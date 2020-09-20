@@ -15,8 +15,10 @@
         %ul.navbarnav
           %li.navitem
             =link_to "GitHubでログイン", "/auth/github", class:"navlink", method: :post
-
     .container
+      - if flash.notice
+        .alert.alert-success
+          = flash.notice
       =yield
 
 
